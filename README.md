@@ -1,4 +1,4 @@
-# Javascript 2 Noroff Course assignment adding functionalety for a SoMe-app
+# Javascript 2 Noroff Course assignment adding functionality for a SoMe-app
 
 ## Goal
 
