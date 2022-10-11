@@ -1,0 +1,22 @@
+{
+  "name": "css-frameworks-ca-some-app",
+  "version": "1.0.0",
+  "description": "Social Media app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server",
+    "start": "npm run && live-server"
+  },
+  "keywords": [],
+  "author": "Martin Mroz",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bbebfafa64.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="text-primary h1 text-decoration-none me-2"
+          >IT</a
+        >
+        <div class="collapse navbar-collapse" id="navbarText">
+          <form class="d-flex mt-1" role="search">
+            <input
+              class="form-control mx-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary center" type="submit">
+              Search
+            </button>
+            <div class="d-flex align-items-center">
+              <a href="/index.html">
+                <i class="fa-solid fa-house fa-xl mx-3 mt-3"></i
+              ></a>
+              <a href="/profile.html">
+                <i class="fa-solid fa-user fa-xl mt-3"></i
+              ></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center container">
+      <div class="">
+        <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
+        <img
+          src="images/Nordmann_beskjert.jpg"
+          class="img-thumbnail rounded-circle profile-img-size my-3 border border-primary border-4"
+          id="profile-img"
+          alt=""
+        />
+      </div>
+      <h1 class="h2 mb-4">Ola Nordmann</h1>
+
+      <div class="d-flex flex-column mb-5 text-primary">
+        <p><i class="fa-solid fa-house"></i> Oslo</p>
+        <p><i class="fa-solid fa-user-group"></i> 194</p>
+        <p><i class="fa-solid fa-briefcase"></i> Student at Noroff</p>
+        <p><i class="fa-solid fa-envelope"></i> mamr@hotmail.no</p>
+        <p><i class="fa-solid fa-phone pb-4"></i> 0047-12345678</p>
+      </div>
+
+      <div class="text-light-blue border-bottom border-2 border-primary">
+        <i class="fa-solid fa-gear mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-solid fa-camera mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-solid fa-pen-to-square mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-regular fa-bell mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-regular fa-image mx-2 mb-4 fa-2xl"></i>
+      </div>
+      <h2 class="my-5">My posts</h2>
+
+      <section class="d-flex align-items-center justify-content-center">
+        <div class="card mb-3 row ">
+          <div class="border d-flex flex-row col-12 ">
+            <img
+              src="images/Nordmann_beskjert.jpg"
+              class="img-thumbnail w-25 h-25 my-2 "
+              id="profile-img"
+              alt=""
+            />
+
+            <div class="card-static-height overflow-auto">
+              <p class="h6 mt-2">Ola Nordmann</p>
+              <p class="p-0 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat reiciendis aspernatur, aperiam cum cupiditate ducimus
+                asperiores magnam quod earum officia nobis amet molestias
+                veritatis tenetur odit, distinctio sequi rem repellendus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex align-items-center justify-content-center">
+        <div class="card mb-3 row">
+          <div class="border d-flex flex-row col-12">
+            <img
+              src="images/Nordmann_beskjert.jpg"
+              class="img-thumbnail w-25 h-25 my-2"
+              id="profile-img"
+              alt=""
+            />
+
+            <div class="card-static-height overflow-auto">
+              <p class="h6 mt-2">Ola Nordmann</p>
+              <p class="p-0 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat reiciendis aspernatur, aperiam cum cupiditate ducimus
+                asperiores magnam quod earum officia nobis amet molestias
+                veritatis tenetur odit, distinctio sequi rem repellendus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="mt-5">My images</h2>
+      <section class="mt-4 mb-5">
+        <div class="row align-items-center justify-content-center">
+  <div class="col-12 col-sm-6 col-md-4 col-xl-4 my-2">
+    <div class="card">
+      <img src="/images/Kari_nordmann.jpg" alt="img of friends" class="card-img" />
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-xl-4 my-2">
+    <div class="card">
+      <img src="/images/Kari_nordmann.jpg" alt="img of friends" class="card-img" />
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-xl-4 my-2">
+    <div class="card">
+      <img src="/images/Kari_nordmann.jpg" alt="img of friends" class="card-img" />
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-xl-4 my-2">
+    <div class="card">
+      <img src="/images/Kari_nordmann.jpg" alt="img of friends" class="card-img" />
+    </div>
+  </div>
+  <div class="col-10 col-sm-6 col-md-4 col-xl-4 my-2">
+    <div class="card">
+      <img src="/images/Kari_nordmann.jpg" alt="img of friends" class="card-img" />
+    </div>
+  </div>
+</div>
+      </section>
+    </div>
+  </body>
+</html>
