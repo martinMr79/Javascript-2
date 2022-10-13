@@ -14,11 +14,3 @@ router();
 //post.getPost()
 //post.getPosts().then(console.log)
 
-//async function testTemplate() {
-//    const posts = await postMethods.getPosts()
-     //const post = posts.pop()
-//    const container = document.querySelector("#posts")
-//    templates.renderPostTemplates(posts, container)
-//}
-
-//testTemplate()

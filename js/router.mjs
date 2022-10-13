@@ -1,4 +1,8 @@
 import * as listeners from "./handlers/index.mjs";
+import { removePost } from "./api/posts/delete.mjs"
+import * as post from "./api/posts/index.mjs";
+import * as templates from "./templates/index.mjs"
+import * as postMethods from "./api/posts/index.mjs"
 
 export default function router() {
   const path = location.pathname;
@@ -24,6 +28,11 @@ export default function router() {
 
 
 
+//removePost(5960)
+post.getPosts().then(console.log)
+post.getPost(1).then(console.log) 
+//*************************//
+
 //if (path === "/profile/login/index.html") {
   //listeners.setLoginFormListener();
 //} else if (path === "/profile/register/index.html") {
@@ -35,3 +44,13 @@ export default function router() {
 //} else if (path ==="/profile/edit/index.html") {
 //  listeners.setUpdateProfileListener()
 //}
+
+
+async function testTemplate() {
+    const posts = await postMethods.getPosts()
+     const post = posts.pop()
+    const container = document.querySelector("#posts")
+    templates.renderPostTemplates(posts, container)
+}
+
+testTemplate()
