@@ -30,7 +30,7 @@ export default function router() {
 
 //removePost(5960)
 post.getPosts().then(console.log)
-post.getPost(1).then(console.log) 
+post.getPost(6681).then(console.log) 
 //*************************//
 
 //if (path === "/profile/login/index.html") {
