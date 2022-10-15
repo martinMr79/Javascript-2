@@ -1,5 +1,5 @@
 import * as listeners from "./handlers/index.mjs";
-import { removePost } from "./api/posts/delete.mjs"
+//import { removePost } from "./api/posts/delete.mjs"
 import * as post from "./api/posts/index.mjs";
 import * as templates from "./templates/index.mjs"
 import * as postMethods from "./api/posts/index.mjs"
@@ -46,11 +46,15 @@ post.getPost(6681).then(console.log)
 //}
 
 
-async function testTemplate() {
-    const posts = await postMethods.getPosts()
-     const post = posts.pop()
-    const container = document.querySelector("#posts")
-    templates.renderPostTemplates(posts, container)
-}
+//async function testTemplate() {
+//   const posts = await postMethods.getPosts()
+//     const post = posts.pop()
+ //   const container = document.querySelector("#posts")
+ //  templates.renderPostTemplates(posts, container)
 
-testTemplate()
+ //  for (let i = 0; i < Posts.length; i++) {
+ //   posts.innerHTML += `<P>fdfdfdf</p>`
+ //  }
+//}
+
+//testTemplate()

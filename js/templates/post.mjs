@@ -1,5 +1,6 @@
 export function postTemplateA(postData) {
-  return `<div class="post" id=${postData.id}>${postData.title}</div>`
+  return `<div class="post" id=${postData.id}>${postData.title}</div>
+  `;
 }
 
 export function postTemplateB(postData) {
@@ -8,20 +9,19 @@ export function postTemplateB(postData) {
   post.innerText = postData.title;
 
   if (postData.media) {
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     img.src = postData.media;
     img.alt = `Image from ${postData.title}`;
-    post.append(img)
+    post.append(img);
   }
 
   return post;
 }
 
 export function renderPostTemplate(postData, parent) {
-  parent.append(postTemplateB(postData))
+  parent.append(postTemplateB(postData));
 }
 
 export function renderPostTemplates(postDataList, parent) {
-  parent.append(...postDataList.map(postTemplateB))
+  parent.append(...postDataList.map(postTemplateB));
 }
-
