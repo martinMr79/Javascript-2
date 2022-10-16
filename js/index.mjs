@@ -12,26 +12,23 @@ import * as postMethods from "./api/posts/index.mjs";
 
 const path = location.pathname;
 
-
 if (path === "/profile/login/index.html") {
   listeners.setLoginFormListener();
-} 
-else if (path === "/profile/register/index.html") {
+} else if (path === "/profile/register/index.html") {
   listeners.setRegisterFormListener();
-} 
+}
 //else if (path === "/post/create/index.html") {
 //  listeners.setCreatePostFormListener();
-//} 
+//}
 else if (path === "/post/edit/index.html") {
   listeners.setUpdatePostListener();
-} 
-else if (path === "/profile/edit/index.html") {
+  post.updatePost()
+} else if (path === "/profile/edit/index.html") {
   listeners.setUpdateProfileListener();
-} 
-else if (path === "/posts/index.html") {
+} else if (path === "/posts/index.html") {
   listeners.setCreatePostFormListener();
   displayPosts();
-  post.createPost()
+  post.createPost();
 }
 
 async function displayPosts() {
@@ -40,7 +37,6 @@ async function displayPosts() {
   const container = document.querySelector("#posts");
   templates.renderPostTemplates(posts, container);
 }
-
 
 //post.removePost()
 //post.updatePost()
