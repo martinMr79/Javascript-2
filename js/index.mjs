@@ -17,9 +17,6 @@ if (path === "/profile/login/index.html") {
 } else if (path === "/profile/register/index.html") {
   listeners.setRegisterFormListener();
 }
-//else if (path === "/post/create/index.html") {
-//  listeners.setCreatePostFormListener();
-//}
 else if (path === "/post/edit/index.html") {
   listeners.setUpdatePostListener();
   post.updatePost()
@@ -38,7 +35,14 @@ async function displayPosts() {
   templates.renderPostTemplates(posts, container);
 }
 
+async function displayPost() {
+  const posts = await postMethods.getPosts();
+  const post = posts.pop();
+  const container = document.querySelector("#post");
+  templates.renderPostTemplates(posts, container);
+}
+
 //post.removePost()
-//post.updatePost()
+//
 //post.getPost()
 // post.getPosts().then(console.log);
