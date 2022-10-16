@@ -19,12 +19,13 @@ async function handleSubmit(evt) {
   const formData = new FormData(form);
   const profile = Object.fromEntries(formData.entries()) 
 
+
+  const name = profile["name"]
   const email = profile["email"];
   const password = profile["password"];
-
   if (email && password) {
-    const result = await register(email, password)
-    //location.href = "/posts/index.html";
+    const result = await register(name, email, password)
+    location.href = "/posts/index.html";
    
   }
 

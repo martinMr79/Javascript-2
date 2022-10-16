@@ -5,16 +5,14 @@ const method = "POST";
 
 
 
-export async function register(email, name, banner, avatar, password) {
+export async function register(name, email, password, ) {
   try {
     const registerURL = API_SOCIAL_URL + action;
     const body = JSON.stringify({
       email: email, 
-      name: name,      
-      banner: banner, 
-      avatar: avatar,
-      password: password,
-
+      password: password,  
+      name: name,
+          
     });
 
   const response = await fetch(registerURL, {
