@@ -1,3 +1,5 @@
+/**Sort by author descending */
+
 export function sortAuthorDesc(array) {
     const sortedArray = array.sort(function (a, b) {
       const authorA = a.author.name.toLowerCase();
