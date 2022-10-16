@@ -1,7 +1,7 @@
-import * as postMethods from "./api/posts/index.mjs"
+import * as listeners from "./api/posts/index.mjs"
 
 
-export default function router() {
+function router() {
     const path = location.pathname;
   
     switch (path) {

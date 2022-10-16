@@ -25,6 +25,7 @@ export async function login(email, password) {
     storage.save("token", accessToken);
 
     storage.save("profile", user);
+    alert("You are now logged in")
   } catch (error) {
     console.log(error);
   }
