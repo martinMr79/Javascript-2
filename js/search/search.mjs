@@ -1,3 +1,8 @@
+
+
+const posts = ""
+
+
 const nameControl = document.getElementById('my-input')
 
 
