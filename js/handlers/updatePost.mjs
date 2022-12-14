@@ -11,7 +11,7 @@ export async function setUpdatePostListener() {
     button.disabled = true;
 
     const post = await getPost(id);
-
+    
     form.title.value = post.title;
     form.body.value = post.body;
     form.tags.value = post.tags;
